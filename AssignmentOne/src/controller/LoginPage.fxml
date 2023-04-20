@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="285.0" style="-fx-background-color: #f4f4f4;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginPageController">
+    <stylesheets>
+        <URL value="@/css/loginpage.css" />
+    </stylesheets>
+   <children>
+      <ImageView fx:id="imageUs" fitHeight="78.0" fitWidth="78.0" layoutX="102.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/man.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="107.0" layoutY="143.0" text="Username">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameField" layoutX="68.0" layoutY="173.0" promptText="username" />
+      <PasswordField fx:id="passwordField" layoutX="68.0" layoutY="248.0" promptText="Password" />
+      <Label layoutX="107.0" layoutY="218.0" text="Password">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginButton" layoutX="107.0" layoutY="296.0" mnemonicParsing="false" onAction="#loginB" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: blue;" text="login" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="140.0" layoutY="26.0" textFill="#dd1818">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="statesLable" layoutX="121.0" layoutY="345.0" text="States">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
